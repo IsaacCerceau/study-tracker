@@ -1,1 +1,16 @@
+@startuml
+actor Estudante as U
+
+rectangle StudyTracker {
+  usecase UC01 as "Cadastrar Matéria"
+  usecase UC02 as "Registrar Horas de Estudo"
+  usecase UC03 as "Definir Meta Semanal"
+  usecase UC04 as "Visualizar Dashboard"
+}
+
+U --> UC01
+U --> UC02
+U --> UC03
+U --> UC04
+@enduml
 
